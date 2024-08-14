@@ -1,0 +1,78 @@
+.basic {
+  * {
+    padding: 0;
+  }
+
+  .basic-html();
+  .basic-body();
+  .basic-img();
+  .basic-input();
+  .basic-selection();
+  .basic-root();
+}
+
+.basic-html {
+  html {
+    width: 100%;
+    margin: 0;
+    font-family: 'Microsoft YaHei', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-size-adjust: none;
+  }
+}
+
+.basic-body {
+  body {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.basic-img {
+  img {
+    max-width: 100%;
+    height: auto;
+    border: none;
+    user-select: none;
+    -webkit-user-drag: none;
+  }
+}
+
+.basic-input {
+  input {
+    border: 0 solid #fff0;
+    border-radius: 0;
+    outline: none;
+    appearance: none;
+    resize: none;
+  }
+
+  /* 去除iPhone中默认的input样式 */
+  input[type='submit'],
+  input[type='reset'],
+  input[type='button'],
+  input:focus,
+  button:focus,
+  select:focus,
+  textarea:focus {
+    outline: none;
+  }
+}
+
+.basic-selection {
+  ::selection {
+    color: #fff;
+    background: #333;
+  }
+}
+
+.basic-root {
+  #root {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+}

@@ -1,0 +1,9 @@
+.fade-in-out(@rotate, @width) {
+  -webkit-mask-image: linear-gradient(
+    @rotate,
+    transparent,
+    #000 @width,
+    #000 (100% - @width),
+    transparent
+  );
+}
